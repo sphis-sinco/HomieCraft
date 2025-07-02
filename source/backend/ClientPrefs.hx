@@ -33,7 +33,7 @@ import states.TitleState;
 	public var flashing:Bool = true;
 	public var autoPause:Bool = true;
 	public var fpsRework:Bool = false;
-	public var antialiasing:Bool = true;
+	public var antialiasing:Bool = false;
 	public var noteSkin:String = 'Default';
 	public var splashSkin:String = 'Psych';
 	public var holdSkin:String = 'Vanilla';
