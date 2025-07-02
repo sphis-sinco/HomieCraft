@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://lime.openfl.org/project/1.0.4 http://lime.openfl.org/xsd/project-1.0.4.xsd">
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app unless="PROFILE_BUILD" title="Friday Night Funkin': Homie Craft" file="HomieCraft" main="Main"
+	<app title="Friday Night Funkin': Homie Craft" file="HomieCraft" main="Main"
 		version="3.1" company="mikolka9144" />
 
 	<!--Switch
@@ -91,13 +91,6 @@
 
 	<!-- Flags for the profile builds (used for assessing performance and such)-->
 	<section if="PROFILE_BUILD">
-		<app title="P-Slice Engine Profiling build"
-			file="PSliceEngine"
-			packageName="com.mikolka9144.testPslice"
-			package="com.mikolka9144.testPslice"
-			main="Main"
-			version="3.0.3"
-			company="mikolka9144" />
 		<define name="nativesys_profile" />
 
 		<define name="pico_always_kill" />
