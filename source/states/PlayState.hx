@@ -1,5 +1,6 @@
 package states;
 
+import sinco.mc.chat.ChatMessage;
 import backend.PsychCamera;
 import mikolka.compatibility.VsliceOptions;
 import mikolka.stages.EventLoader;
@@ -2295,6 +2296,8 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	public var mcChatGRP:FlxTypedGroup<ChatMessage>;
+
 	public function triggerEvent(eventName:String, value1:String, value2:String, strumTime:Float)
 	{
 		var flValue1:Null<Float> = Std.parseFloat(value1);
@@ -2324,7 +2327,7 @@ class PlayState extends MusicBeatState
 
 				var mcChat:ChatMessage = new ChatMessage(value1);
 
-				var babyChar:String = girlfriend.curCharacter;
+				var babyChar:String = gf.curCharacter;
 				var daddyChar:String = dad.curCharacter;
 				var keithChar:String = boyfriend.curCharacter;
 
@@ -2350,7 +2353,7 @@ class PlayState extends MusicBeatState
 				{
 					case 'gf':
 						mcChat.textField.text = '<${babyChar}>: $value1';
-						if (ClientPrefs.data.colorChat) mcChat.textField.color = FlxColor.fromRGB(girlfriend.healthColorArray[0], girlfriend.healthColorArray[1], girlfriend.healthColorArray[2]);
+						if (ClientPrefs.data.colorChat) mcChat.textField.color = FlxColor.fromRGB(gf.healthColorArray[0], gf.healthColorArray[1], gf.healthColorArray[2]);
 					case 'dad':
 						mcChat.textField.text = '<${daddyChar}>: $value1';
 						if (ClientPrefs.data.colorChat) mcChat.textField.color = healthBar.leftBar.color;

@@ -109,6 +109,9 @@ import states.TitleState;
 	public var discordRPC:Bool = true;
 	public var loadingScreen:Bool = true;
 	public var language:String = 'en-US';
+	
+	// minecraft chat
+	public var colorChat:Bool = false;
 }
 
 class ClientPrefs {

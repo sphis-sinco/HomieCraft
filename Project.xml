@@ -31,7 +31,7 @@
 	<!-- ______________________ PSYCH ENGINE CUSTOMIZATION ______________________ -->
 
 	<!-- Compiles mod support for P-Slice. Feel free to disable if you're making a source mod -->
-	<!-- <define name="MODS_ALLOWED" if="desktop || mobile" /> -->
+	<define name="MODS_ALLOWED" if="desktop || mobile" />
 
 	<section unless="debug">
 		<!-- Adds the ability to use OpenFL asset lookup (defaults to sys if disabled)  -->

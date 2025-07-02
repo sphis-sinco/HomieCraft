@@ -1,0 +1,15 @@
+{
+  "lime.targetConfigurations": [
+    {
+      "label": "Windows / Debug / Watch",
+      "target": "windows",
+      "args": ["-debug", "-watch"]
+    }
+],
+"files.exclude": {
+        "**/*.rpyc": true,
+        "**/*.rpa": true,
+        "**/*.rpymc": true,
+        "**/cache/": true
+}
+}
